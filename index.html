@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>קפיצה קוונטית · כנס לייב עם אסתר מלכה</title>
-<meta name="description" content="כנס לייב בזום עם אסתר מלכה. יום ראשון 1.11, ללא עלות. איך לחוות קפיצה קוונטית בכל תחום בחיים שלך.">
+<title>את לא יכולה לחיות חיים חדשים עם זהות ישנה · אסתר מלכה</title>
+<meta name="description" content="כנס לייב בזום עם אסתר מלכה, ביום ראשון 1.11, ללא עלות. את לא יכולה לחיות חיים חדשים עם זהות ישנה.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="קפיצה קוונטית · כנס לייב עם אסתר מלכה">
+<meta property="og:title" content="את לא יכולה לחיות חיים חדשים עם זהות ישנה">
 <meta property="og:description" content="יום ראשון 1.11 · לייב בזום · ללא עלות. כי את לא יכולה ליצור מציאות חדשה עם זהות ישנה.">
 <meta name="theme-color" content="#22060f">
 <meta name="robots" content="noindex">
@@ -46,45 +46,50 @@ main{position:relative;z-index:1}
 /* 1-2 · headline + sub */
 .hero{padding-top:44px;padding-bottom:0}
 .hero h1{font-size:clamp(30px,7vw,48px);font-weight:900;margin:4px auto 14px;max-width:660px}
-.hero .h1-sub{font-family:var(--serif);font-weight:700;font-size:clamp(20px,4.4vw,30px);line-height:1.35;color:var(--white);margin:0 auto 14px;max-width:620px;opacity:.94;text-wrap:balance}
-.hero .sub{font-size:clamp(18px,4.3vw,21px);color:#eadbc9;max-width:520px;margin:0 auto}
+.hero .h1-sub{font-family:var(--sans);font-weight:600;font-size:clamp(19px,4.4vw,24px);line-height:1.35;color:var(--white);margin:0 auto 14px;max-width:620px;opacity:.94;text-wrap:balance}
+.hero .sub{font-size:clamp(17px,4.2vw,20px);color:#eadbc9;max-width:560px;margin:0 auto}
+br.d{display:none}
+@media (min-width:700px){br.d{display:inline}}
+.hero .sub b{color:var(--gold2);font-weight:700}
 .when{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin-top:18px;padding:9px 20px;border:1px solid var(--line);border-radius:999px;font-weight:700;font-size:16px;color:var(--gold2);background:rgba(53,11,26,.6)}
 .when b{color:var(--white);font-weight:700}
 
 /* 3 · before / today */
-.ba{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px;margin:30px auto 0}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:640px;margin:26px auto 0}
 .ba figure{margin:0;position:relative}
 .ba img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px}
 .ba .before img{filter:grayscale(.25) brightness(.9);border:1px solid rgba(201,179,162,.3)}
 .ba .after img{border:1px solid rgba(255,217,138,.6);box-shadow:0 0 28px rgba(240,196,106,.28)}
-.ba figcaption{position:absolute;inset-inline:0;bottom:10px;margin:auto;width:max-content;padding:4px 14px;border-radius:999px;font-size:14px;font-weight:700;letter-spacing:0;background:rgba(20,3,9,.78)}
+.ba figcaption{position:absolute;inset-inline:0;bottom:8px;margin:auto;width:max-content;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:0;background:rgba(20,3,9,.78)}
 .ba .before figcaption{color:rgba(243,231,218,.75)}
 .ba .after figcaption{color:var(--gold2)}
-.ba-line{max-width:520px;margin:16px auto 0;font-size:17px;color:var(--soft);line-height:1.6}
+.ba-line{max-width:640px;margin:10px auto 0;font-size:13.5px;color:var(--soft);line-height:1.5}
 .ba-line b{color:var(--white)}
 /* desktop: the before/today pair and the form side by side, so the button is on the first screen */
 @media (min-width:900px){
-  .hero .wrap{max-width:1000px}
-  .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:28px}
+  .hero .wrap{max-width:1100px}
+  .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;margin-top:26px}
   .hero-grid .ba,.hero-grid .lf{margin-top:0}
 }
 @media (max-width:560px){
   .hero{padding-top:26px}
   .hero h1{margin-bottom:10px}
   .when{margin-top:12px}
-  .ba{margin-top:18px;gap:10px}
-  .ba img{aspect-ratio:1/1;object-position:center 30%}
-  .ba-line{font-size:15.5px;margin-top:10px}
+  .ba{margin-top:18px;gap:8px;margin-inline:-8px}
+  .ba img{border-radius:12px}
+  .ba-line{font-size:13px;margin-top:8px}
   .lf{margin-top:18px}
 }
 
 /* 4 · the lead form */
 .lf{margin:30px auto 0;max-width:500px;padding:26px 22px 22px;border-radius:22px;background:linear-gradient(180deg,rgba(255,236,200,.07),rgba(255,255,255,0)),var(--card);border:1px solid rgba(255,217,138,.45);box-shadow:0 30px 60px -30px rgba(0,0,0,.9),0 0 0 6px rgba(240,196,106,.06)}
 .lf label{display:block;font-family:var(--serif);font-weight:700;font-size:21px;color:var(--white);margin-bottom:12px}
-.lf input[type=email]{width:100%;min-height:58px;padding:14px 18px;border-radius:14px;border:1px solid rgba(255,217,138,.45);background:#1a040b;color:var(--white);font:inherit;font-size:19px;text-align:center;direction:ltr}
-.lf input[type=email]::placeholder{color:rgba(201,179,162,.85)}
-.lf input[type=email]:focus{outline:none;border-color:var(--gold2);box-shadow:0 0 0 4px rgba(240,196,106,.2)}
+.lf input{width:100%;min-height:58px;padding:14px 18px;border-radius:14px;border:1px solid rgba(255,217,138,.45);background:#1a040b;color:var(--white);font:inherit;font-size:19px;text-align:center;direction:ltr}
+.lf input::placeholder{color:rgba(201,179,162,.85)}
+.lf input:focus{outline:none;border-color:var(--gold2);box-shadow:0 0 0 4px rgba(240,196,106,.2)}
 .lf .err{display:none;color:#ffb4a8;font-size:15px;margin:8px 0 0}
+.lf input+input{margin-top:10px}
+.lf input[name=name]{direction:rtl}
 .lf.bad .err{display:block}
 .lf .fine{font-size:13.5px;color:var(--soft);opacity:.85;margin:14px 0 0;line-height:1.5}
 .cta{display:flex;width:100%;align-items:center;justify-content:center;gap:10px;margin-top:12px;cursor:pointer;text-decoration:none;font:inherit;font-weight:700;font-size:21px;color:#2a0d02;
@@ -167,11 +172,9 @@ footer a:hover{color:var(--gold2)}
 <!-- 1 כותרת · 2 סאב · 3 לפני/אחרי · 4 LF -->
 <section class="hero" id="top">
   <div class="wrap">
-    <span class="eyebrow">כנס לייב · ללא עלות</span>
-    <h1>איך לחוות <em>קפיצה קוונטית</em> בכל תחום בחיים שלך</h1>
-    <p class="h1-sub">ולהתחיל לחיות את החיים כמו שאת באמת חולמת?</p>
-    <p class="sub">כנס לייב בזום, שבו אני מראה לך איך לברוא את החיים שאת רוצה.</p>
-    <div class="when"><b>יום ראשון · 1.11</b><span>לייב בזום</span><span>ללא עלות</span></div>
+    <h1>את לא יכולה לחיות חיים חדשים<br class="d"> <em>עם זהות ישנה</em></h1>
+    <p class="h1-sub">כשאת משנה את הזהות שממנה את חושבת, בוחרת ופועלת, המציאות שלך משתנה איתה.</p>
+    <p class="sub">בכנס לייב בזום <b>ביום ראשון, 1.11</b>, אני מראה לך בדיוק איך. ללא עלות.</p>
 
     <div class="hero-grid">
     <div>
@@ -185,9 +188,10 @@ footer a:hover{color:var(--gold2)}
     <div>
     <div class="lf" id="form">
       <form novalidate>
-        <label for="email1">לאן לשלוח לך את הקישור לכנס?</label>
-        <input id="email1" type="email" dir="ltr" name="email" placeholder="המייל שלך" autocomplete="email" inputmode="email" required>
-        <p class="err">רק רגע, המייל לא נראה תקין</p>
+        <label for="name1">לאן לשלוח לך את הקישור לכנס?</label>
+        <input id="name1" type="text" name="name" placeholder="השם שלך" autocomplete="given-name" required aria-label="השם שלך">
+        <input id="email1" type="email" dir="ltr" name="email" placeholder="המייל שלך" autocomplete="email" inputmode="email" required aria-label="המייל שלך">
+        <p class="err">רק רגע, חסר שם או שהמייל לא נראה תקין</p>
         <button class="cta" type="submit">קחי אותי לכנס</button>
         <p class="fine">בהרשמה את מאשרת לקבל ממני מיילים. אפשר להסיר בכל רגע.</p>
       </form>
@@ -272,9 +276,10 @@ footer a:hover{color:var(--gold2)}
     <div class="when"><b>יום ראשון · 1.11</b><span>לייב בזום</span><span>ללא עלות</span></div>
     <div class="lf">
       <form novalidate>
-        <label for="email2">לאן לשלוח לך את הקישור לכנס?</label>
-        <input id="email2" type="email" dir="ltr" name="email" placeholder="המייל שלך" autocomplete="email" inputmode="email" required>
-        <p class="err">רק רגע, המייל לא נראה תקין</p>
+        <label for="name2">לאן לשלוח לך את הקישור לכנס?</label>
+        <input id="name2" type="text" name="name" placeholder="השם שלך" autocomplete="given-name" required aria-label="השם שלך">
+        <input id="email2" type="email" dir="ltr" name="email" placeholder="המייל שלך" autocomplete="email" inputmode="email" required aria-label="המייל שלך">
+        <p class="err">רק רגע, חסר שם או שהמייל לא נראה תקין</p>
         <button class="cta" type="submit">אני מצטרפת לכנס</button>
         <p class="fine">בהרשמה את מאשרת לקבל ממני מיילים. אפשר להסיר בכל רגע.</p>
       </form>
@@ -317,10 +322,11 @@ var CONFIG = {
   document.querySelectorAll('.lf form').forEach(function(f){
     f.addEventListener('submit',function(e){
       e.preventDefault();
-      var box=f.parentNode,inp=f.querySelector('input'),btn=f.querySelector('button'),email=inp.value.trim();
+      var box=f.parentNode,nm=f.querySelector('input[name=name]'),inp=f.querySelector('input[name=email]'),btn=f.querySelector('button'),email=inp.value.trim(),name=nm.value.trim();
+      if(name.length<2){box.classList.add('bad');nm.focus();return;}
       if(!EMAIL.test(email)){box.classList.add('bad');inp.focus();return;}
       box.classList.remove('bad');btn.disabled=true;
-      var body=new URLSearchParams(Object.assign({email:email,source:'optin-kenes-1.11',page:location.origin+location.pathname,ts:new Date().toISOString()},utm));
+      var body=new URLSearchParams(Object.assign({name:name,email:email,source:'optin-kenes-1.11',page:location.origin+location.pathname,ts:new Date().toISOString()},utm));
       var sent=CONFIG.webhook?fetch(CONFIG.webhook,{method:'POST',mode:'no-cors',body:body}).catch(function(){}):Promise.resolve();
       if(window.fbq)fbq('track','Lead');
       sent.then(function(){
@@ -331,7 +337,7 @@ var CONFIG = {
   });
 
   // the mid / floating buttons take her to the first form
-  var first=document.getElementById('email1');
+  var first=document.getElementById('name1');
   document.querySelectorAll('.js-to-form').forEach(function(a){
     a.addEventListener('click',function(e){e.preventDefault();document.getElementById('form').scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){first.focus({preventScroll:true});},500);});
   });
